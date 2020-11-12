@@ -1,0 +1,51 @@
+::selection {
+    background-color: $lightBlue;
+    color: white;
+}
+
+::placeholder {
+    font-weight: 300;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $lightBlue;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $darkBlue;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    background-color: #FBFCFE;
+}
+
+button, input, a {
+    outline: none !important;
+}
+
+input, textarea {
+    border: none;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: $textColor;
+}
