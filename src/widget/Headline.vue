@@ -25,24 +25,16 @@
                 </div>
             </div>
 
-            <div id="riid_full" class="modal">
-                <div class="modal-content">
-                    <span id="closeRiidFull" class="close" @click="hideModal()"
-                        >&times;</span
-                    >
-                    <h1>Testing</h1>
-                </div>
-            </div>
-
             <div class="text-center mt-4">
-                <button
+                <a
+                    :href="$props.headline.url"
+                    target="_blank"
                     type="button"
                     class="riid-more"
                     id="view_riid_full"
-                    @click="showModal()"
                 >
                     Riid More
-                </button>
+                </a>
             </div>
         </div>
     </div>
@@ -52,17 +44,6 @@
 export default {
     props: {
         headline: Object,
-    },
-    /*eslint no-undef: 0 */
-    methods: {
-        showModal() {
-            console.log("Testing");
-            $("#riid_full").hide("modal");
-        },
-        hideModal() {
-            console.log("Testing");
-            $("#riid_full").hide("modal");
-        },
     },
 };
 </script>
