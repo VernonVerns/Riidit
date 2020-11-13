@@ -107,18 +107,18 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
         .headline-list {
             .single-headline {
                 background-color: #f9f9f9;
+                border: 1px solid #f2f2f2;
                 border-radius: 10px;
                 margin-bottom: 20px;
 
                 .article-image {
                     width: 100%;
-                    height: 150px;
+                    height: 200px;
                     background-size: cover;
                     background-position: center;
                     object-fit: cover;
                     background-repeat: no-repeat;
                     border-radius: 10px;
-                    margin-bottom: 5px;
                 }
 
                 .content {

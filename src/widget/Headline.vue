@@ -1,9 +1,6 @@
 <template>
     <div class="single-headline">
-        <div
-            class="article-image"
-            :style="`background-image: url(${$props.headline.urlToImage})`"
-        ></div>
+        <div class="article-image" :style="headlineImage()"></div>
         <div class="content">
             <h3 class="headline-title">
                 {{ $props.headline.title }}
@@ -44,6 +41,15 @@
 export default {
     props: {
         headline: Object,
+    },
+    methods: {
+        /* eslint no-undef: 0 */
+        headlineImage() {
+            let image = this.$props.headline.urlToImage;
+            return image != null
+                ? `background-image: url(${image})`
+                : "background-image: url('../assets/img/healine-img.jpg')";
+        },
     },
 };
 </script>

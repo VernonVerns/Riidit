@@ -1,7 +1,12 @@
 <template>
     <div id="news_app">
         <div class="riidit-navbar">
-            <img src="../assets/img/logo.svg" alt="Riidit logo" class="logo" />
+            <router-link to="/">
+                <img
+                    src="../assets/img/logo.svg"
+                    alt="Riidit logo"
+                    class="logo"
+            /></router-link>
             <router-link to="/" class="menu-btn">
                 <img src="../assets/img/menu-icon.svg" alt="Menu" />
             </router-link>
