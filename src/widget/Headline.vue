@@ -48,7 +48,7 @@ export default {
             let image = this.$props.headline.urlToImage;
             return image != null
                 ? `background-image: url(${image})`
-                : "background-image: url('../assets/img/healine-img.jpg')";
+                : "background-image: url('../assets/img/default-img.png')";
         },
     },
 };
